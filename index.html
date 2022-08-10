@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Carousel Template · Bootstrap v5.2</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <!--
+        <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">-->
+
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="#">Container</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample07" style="">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="bg-dark">
+        <div class="1 container">
+            <div class="py-3 my-3 text-center">
+                <h1 class="display-5 fw-bold">Feature</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Features of our company</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/feature_01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3>早期退職は全額返金</h3>
+                            <p class="card-text">長期雇用を前提とした人材をご紹介しますので、入社６ヶ月以内の退職は全額返金いたします。
+
+                                保証期間は６か月、１２か月、３６か月の３つをご用意しています。
+
+                                「すぐに辞められると困る…」と不安な事業者様でも安心してお受け入れいただけます。</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/feature_02.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3>トータルサポート</h3>
+                            <p class="card-text">人材募集から在留資格の変更及び、入社後のサポートまで弊社がトータルにサポートいたします。
+
+                                ご希望の事業者様には1、2年で登録支援コンサル代を無くせるようにサポートします。
+
+                                就労者の支援を自社で行うことにより、特定技能の受け入れに伴うコストを削減することが可能です。</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/jinzai3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3>独自の海外ネットワーク</h3>
+                            <p class="card-text">YORISOI介護日本語学校ネパール/インドネシアと専属パートナーシップ契約を締結しており、優秀な人材を安定的に供給します。
+
+                                また、弊社の現地法人（ネパール/インドネシア/ベトナム/フィリピン/中国）から直接。優秀な人材をご紹介致します。</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/jinzai4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3>介護福祉士合格をサポート</h3>
+                            <p class="card-text">一般社団法人しふく福祉人材協会が提供するオンラインでの介護福祉士合格プログラムにて、入社後の資格取得もサポートします。</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light">
+        <div class="2 container ">
+            <div class=" py-3 my-3 text-center">
+                <h1 class="display-5 fw-bold">Staff</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Personnel we can introduce</p>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">介護福祉士（暫定介護福祉士）、正看護師、准看護師等の有資格者</h1>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">特定技能介護合格者</h1>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="2 container ">
+            <div class=" py-3 my-3 text-center">
+                <h1 class="display-5 fw-bold">COMPANY</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">会社概要</p>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">介護福祉士（暫定介護福祉士）、正看護師、准看護師等の有資格者</h1>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">特定技能介護合格者</h1>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm">
+                    <img class="me-3" src="img/icons8-bookmark-24.png">
+                    <div class="lh-1">
+                        <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
