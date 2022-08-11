@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!--    ======================================================-->
+    <!--    develop by : https://github.com/udarasan-->
+    <!--    date : 2022.11.08-->
+    <!--    ======================================================-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.101.0">
-    <title>Carousel Template · Bootstrap v5.2</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!-- Favicons -->
     <!--
@@ -21,15 +18,29 @@
         <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">-->
 
     <!-- Custom styles for this template -->
+    <link href="css/hover-min.css" rel="stylesheet" media="all">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link href="css/aos.css" rel="stylesheet">
     <link href="./css/carousel.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/animate.min.css" rel="stylesheet">
 
 </head>
 <body>
 
+<div id="preloader"></div>
+<script>
+    var loader=document.getElementById('preloader');
+    window.addEventListener("load",function () {
+        loader.style.display="none";
+    })
+</script>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Eighth navbar example">
         <div class="container">
-            <a class="navbar-brand" href="#">Container</a>
+            <a class="navbar-brand" href="#"><img src="img/logo-EastBridge.png"></a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -39,26 +50,27 @@
             <div class="navbar-collapse collapse" id="navbarsExample07" style="">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link " href="#">インドネシア校</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">ネパール校</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#">フィリピンコールセンター</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
-                <form role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn bg-newBlue customBtn"><a href="tel:03-5812-8321"></a><strong
+                                class=" text-light">03-5812-8321</strong></button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">お問い合わせ</a>
+                    </li>
+
+                </ul>
+
             </div>
         </div>
     </nav>
@@ -74,31 +86,19 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <!--<div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777"/>
-                </svg>
 
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>Example headline.</h1>
-                        <p>Some representative placeholder content for the first slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                    </div>
-                </div>
-            </div>-->
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777"/>
-                </svg>
+            <div class="carousel-item active bg-dark">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <rect width="100%" height="100%" fill="#777"/>
+                 </svg>-->
+
 
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>
                         <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <p><a class="btn btn-lg bg-newBlue text-light" href="#">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -112,38 +112,24 @@
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>
                         <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <p><a class="btn btn-lg bg-newBlue text-light" href="#">Learn more</a></p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item ">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777"/>
-                </svg>
+            <div class="carousel-item bg-dark ">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                     <rect width="100%" height="100%" fill="#777"/>
+                 </svg>-->
 
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>
                         <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <p><a class="btn btn-lg bg-newBlue text-light" href="#">Learn more</a></p>
                     </div>
                 </div>
             </div>
-            <!--<div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#777"/>
-                </svg>
-
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>-->
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -157,17 +143,17 @@
     </div>
     <!--Feature-->
     <div class="bg-light">
-        <div class="1 container py-3">
-            <div class="py-3  text-center">
-                <h1 class="display-5 fw-bold">Feature</h1>
+        <div class="1 container py-3 ">
+            <div class="py-3  text-center animate__animated animate__fadeInUp ">
+                <h1 class="display-5 fw-bold " id="feature">Feature</h1>
                 <div class="col-lg-6 mx-auto">
                     <p class="lead mb-4">Features of our company</p>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3 pb-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3 pb-5  animate__animated animate__fadeInUp">
 
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm ">
                         <img src="img/feature_01.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3>早期退職は全額返金</h3>
@@ -181,7 +167,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm ">
                         <img src="img/feature_02.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3>トータルサポート</h3>
@@ -195,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm ">
                         <img src="img/jinzai3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3>独自の海外ネットワーク</h3>
@@ -207,7 +193,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm ">
                         <img src="img/jinzai4.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3>介護福祉士合格をサポート</h3>
@@ -221,36 +207,41 @@
     </div>
     <!--Staff-->
     <div class="bg-light">
-        <div class="2 container py-3 ">
-            <div class=" py-3 text-center">
-                <h1 class="display-5 fw-bold">Staff</h1>
+        <div class="2 container py-3">
+            <div class="py-3 text-center" data-aos="fade-up"
+                 data-aos-anchor-placement="bottom-bottom">
+                <h1 class="display-5 fw-bold" id="staff">Staff</h1>
                 <div class="col-lg-6 mx-auto">
                     <p class="lead mb-4">Personnel we can introduce</p>
                 </div>
             </div>
             <div class="pb-5">
-                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm">
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm " data-aos="flip-up"
+                     data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
-                        <h1 class="h6 mb-0 text-white lh-1">介護福祉士（暫定介護福祉士）、正看護師、准看護師等の有資格者</h1>
+                        <h1 class="h6 mb-0 text-white lh-1 animate__backInLeft">介護福祉士（暫定介護福祉士）、正看護師、准看護師等の有資格者</h1>
 
                     </div>
                 </div>
-                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm">
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm" data-aos="flip-up"
+                     data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
                         <h1 class="h6 mb-0 text-white lh-1">特定技能介護合格者</h1>
 
                     </div>
                 </div>
-                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm">
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-dark rounded shadow-sm" data-aos="flip-up"
+                     data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
                         <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
 
                     </div>
                 </div>
-                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm">
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-dark rounded shadow-sm" data-aos="flip-up"
+                     data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
                         <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
@@ -262,27 +253,31 @@
         </div>
     </div>
     <!--Company-->
-    <div class="bg-primary">
+    <div class="bg-primary ppp pb-5">
         <div class="3 container py-3">
-            <div class=" py-5 text-center">
-                <h1 class="display-5 fw-bold">Company</h1>
+            <div class=" py-5 text-center" data-aos="fade-up"
+                 data-aos-anchor-placement="bottom-bottom">
+                <h1 class="display-5 fw-bold text-light" id="company">Company</h1>
                 <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">Personnel we can introduce</p>
+                    <p class="lead mb-4 text-light">Personnel we can introduce</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <div class="py-3 accordion accordion-flush ">
+                <div class="col-lg-6 col-sm-12" data-aos="fade-right"
+                     data-aos-anchor="#example-anchor"
+                     data-aos-offset="2000"
+                     data-aos-duration="2000">
+                    <div class="py-3 accordion accordion-flush" id="accordionFlushExampleOne">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseOne" aria-expanded="false"
                                         aria-controls="flush-collapseOne">
-                                    資本金
+                                    <strong>資本金</strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExampleOne">
                                 <div class="accordion-body">1,000万円
                                 </div>
                             </div>
@@ -292,11 +287,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                         aria-controls="flush-collapseTwo">
-                                    設立
+                                    <strong> 設立 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExampleOne">
                                 <div class="accordion-body">1994年 3月 1日
                                 </div>
                             </div>
@@ -306,11 +301,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseThree" aria-expanded="false"
                                         aria-controls="flush-collapseThree">
-                                    役員
+                                    <strong>役員 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExampleOne">
                                 <div class="accordion-body">代表取締役社長　今村 努
                                 </div>
                             </div>
@@ -320,11 +315,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseFour" aria-expanded="false"
                                         aria-controls="flush-collapseFour">
-                                    従業員数
+                                    <strong>従業員数 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExampleOne">
                                 <div class="accordion-body">国内 45名　海外 30名 （内外国人スタッフ71名）
                                 </div>
                             </div>
@@ -334,11 +329,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseFive" aria-expanded="false"
                                         aria-controls="flush-collapseFive">
-                                    取引銀行
+                                    <strong>取引銀行 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseFive" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExampleOne">
                                 <div class="accordion-body">みずほ銀行　西野田支店
                                 </div>
                             </div>
@@ -348,11 +343,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseSix" aria-expanded="false"
                                         aria-controls="flush-collapseSix">
-                                    主な取引先
+                                    <strong>主な取引先 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseSix" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                 aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExampleOne">
                                 <div class="accordion-body">KDDI株式会社
                                     ソフトバンク株式会社
                                     東日本電信電話株式会社
@@ -369,11 +364,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseSeven" aria-expanded="false"
                                         aria-controls="flush-collapseSeven">
-                                    東京本社
+                                    <strong> 東京本社 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                                 aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                 aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExampleOne">
                                 <div class="accordion-body">〒110-0005　東京都台東区上野1-11-9　イマスサニービル８階
                                     TEL：03-5812-8321　FAX：03-5812-8366
                                 </div>
@@ -381,14 +376,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-12" data-aos="fade-left"
+                     data-aos-anchor="#example-anchor"
+                     data-aos-offset="2000"
+                     data-aos-duration="2000">
                     <div class="py-3 accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingEight">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseEight" aria-expanded="false"
                                         aria-controls="flush-collapseEight">
-                                    大阪支社
+                                    <strong>大阪支社 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseEight" class="accordion-collapse collapse"
@@ -403,7 +401,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseNine" aria-expanded="false"
                                         aria-controls="flush-collapseNine">
-                                    福岡支社
+                                    <strong>福岡支社 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseNine" class="accordion-collapse collapse"
@@ -419,7 +417,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseTen" aria-expanded="false"
                                         aria-controls="flush-collapseTen">
-                                    名古屋支社
+                                    <strong>名古屋支社 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseTen" class="accordion-collapse collapse"
@@ -434,7 +432,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseEleven" aria-expanded="false"
                                         aria-controls="flush-collapseEleven">
-                                    海外拠点
+                                    <strong> 海外拠点 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseEleven" class="accordion-collapse collapse"
@@ -451,7 +449,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseTwelve" aria-expanded="false"
                                         aria-controls="flush-collapseTwelve">
-                                    事業内容
+                                    <strong>事業内容 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseTwelve" class="accordion-collapse collapse"
@@ -470,7 +468,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseThirteen" aria-expanded="false"
                                         aria-controls="flush-collapseThirteen">
-                                    ご紹介できる人材
+                                    <strong>ご紹介できる人材 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseThirteen" class="accordion-collapse collapse"
@@ -489,7 +487,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseFourteen" aria-expanded="false"
                                         aria-controls="flush-collapseFourteen">
-                                    ご紹介可能な国籍
+                                    <strong>ご紹介可能な国籍 </strong>
                                 </button>
                             </h2>
                             <div id="flush-collapseFourteen" class="accordion-collapse collapse"
@@ -512,6 +510,31 @@
 
     </div>
     </div>
+    <!--Contact-->
+    <div class="bg" data-aos="fade-up"
+         data-aos-anchor-placement="center-bottom"
+         data-aos-duration="1500">
+        <div class="4 container py-3 pt-5">
+            <div class="pb-5">
+                <div class="px-4 text-center">
+                    <div class="col-lg-12 mx-auto">
+                        <p class="lead mb-4">Job Reliable(ジョブリライアブル)とは、イーストブリッジが新たに展開する「前勤務先へのヒアリング代行サービス」です。
+                            企業様が人材採用時、応募者の前勤務先での勤務態度などを、弊社が代行してヒアリングさせていただき、スムーズな採用活動をサポートいたします。
+                            弊社は社員の80%が外国籍で、中国、フィリピン、インドネシア、ネパールなどにも支社を設けています。
+                            そのため、特定技能などの入国予定の就業者採用にも最適です。</p>
+                        <h2 class="pb-2">お気軽にお問い合わせください</h2>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <button type="button" class="btn bg-newBlue btn-lg px-4 gap-3 customBtn text-light">
+                                03-5812-8321
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">お問い合わせ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!--Footer-->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -526,19 +549,24 @@
 
             <ul class="nav col-md-4 justify-content-end">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="#feature" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#staff" class="nav-link px-2 text-muted">Staff</a></li>
+                <li class="nav-item"><a href="#company" class="nav-link px-2 text-muted">Company</a></li>
             </ul>
         </footer>
     </div>
+    <!-- Back to top button -->
+    <button class="btn btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0"
+            onclick="scrollToTop()" id="back-to-up">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
 </main>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-
+<script src="js/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
