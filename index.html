@@ -26,6 +26,7 @@
     <link href="./css/carousel.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 <body>
@@ -34,9 +35,9 @@
 
 </div>
 <script>
-    var loader=document.getElementById('preloader');
-    window.addEventListener("load",function () {
-        loader.style.display="none";
+    var loader = document.getElementById('preloader');
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
     })
 </script>
 <header>
@@ -51,8 +52,12 @@
 
             <div class="navbar-collapse collapse" id="navbarsExample07" style="">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " href="#">インドネシア校</a>
+                        <a class="nav-link" href="#">インドネシア校</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ネパール校</a>
@@ -60,11 +65,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">フィリピンコールセンター</a>
                     </li>
-
-                </ul>
-                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <button class="btn bg-newBlue customBtn"><a href="tel:03-5812-8321"></a><strong
+
+                        <button class="btn bg-newBlue customBtn"><a href="tel:03-5812-8321"></a>
+                            <i class="bi bi-telephone-fill text-light"></i>
+                            <strong
                                 class=" text-light">03-5812-8321</strong></button>
                     </li>
                     <li class="nav-item">
@@ -98,7 +103,7 @@
 
                 <div class="container ">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
+                        <h1 class="title-name">Another example headline.</h1>
                         <p>Some representative placeholder content for the second slide of the carousel.</p>
                         <p><a class="btn btn-lg bg-newBlue text-light" href="#">Learn more</a></p>
                     </div>
@@ -112,7 +117,7 @@
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
+                        <h1 class="title-name">Another example headline.</h1>
                         <p>Some representative placeholder content for the second slide of the carousel.</p>
                         <p><a class="btn btn-lg bg-newBlue text-light" href="#">Learn more</a></p>
                     </div>
@@ -126,7 +131,7 @@
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
+                        <h1 class="title-name">Another example headline.</h1>
                         <p>Some representative placeholder content for the second slide of the carousel.</p>
                         <p><a class="btn btn-lg bg-newBlue text-light" href="#">Learn more</a></p>
                     </div>
@@ -150,22 +155,22 @@
                  data-aos-anchor-placement="bottom-bottom">
                 <h1 class="display-5 fw-bold " id="feature">Feature</h1>
                 <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">Features of our company</p>
+                    <p class="lead mb-4" id="feature-sub">Features of our company</p>
                 </div>
             </div>
             <div class="row">
                 <div class="card mb-3" data-aos="fade-up"
                      data-aos-anchor-placement="bottom-bottom">
                     <div class="row g-0">
-                        <div class="col-md-4" data-aos="fade-right"
+                        <div class="col-md-5" data-aos="fade-right"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
                             <img src="img/feature_01.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-8" data-aos="fade-left"
+                        <div class="col-md-7" data-aos="fade-left"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
-                            <div class="card-body" >
+                            <div class="card-body">
                                 <h3 class="card-title">早期退職は全額返金</h3>
                                 <p class="card-text">長期雇用を前提とした人材をご紹介しますので、入社６ヶ月以内の退職は全額返金いたします。
 
@@ -180,12 +185,12 @@
                 <div class="card mb-3" data-aos="fade-up"
                      data-aos-anchor-placement="bottom-bottom">
                     <div class="row g-0">
-                        <div class="col-md-4" data-aos="fade-right"
+                        <div class="col-md-5" data-aos="fade-right"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
                             <img src="img/feature_02.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-8" data-aos="fade-left"
+                        <div class="col-md-7" data-aos="fade-left"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
                             <div class="card-body">
@@ -203,12 +208,12 @@
                 <div class="card mb-3" data-aos="fade-up"
                      data-aos-anchor-placement="bottom-bottom">
                     <div class="row g-0">
-                        <div class="col-md-4" data-aos="fade-right"
+                        <div class="col-md-5" data-aos="fade-right"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
                             <img src="img/jinzai3.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-8" data-aos="fade-left"
+                        <div class="col-md-7" data-aos="fade-left"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
                             <div class="card-body">
@@ -224,12 +229,12 @@
                 <div class="card mb-3" data-aos="fade-up"
                      data-aos-anchor-placement="bottom-bottom">
                     <div class="row g-0">
-                        <div class="col-md-4" data-aos="fade-right"
+                        <div class="col-md-5" data-aos="fade-right"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
                             <img src="img/jinzai4.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-8" data-aos="fade-left"
+                        <div class="col-md-7" data-aos="fade-left"
                              data-aos-offset="300"
                              data-aos-easing="ease-in-sine">
                             <div class="card-body">
@@ -303,39 +308,43 @@
                  data-aos-anchor-placement="bottom-bottom">
                 <h1 class="display-5 fw-bold" id="staff">Staff</h1>
                 <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">Personnel we can introduce</p>
+                    <p class="lead mb-4" id="staff-sub">Personnel we can introduce</p>
                 </div>
             </div>
             <div class="pb-5">
-                <div class="d-flex align-items-center p-3 my-1 text-white bg-newBlue rounded shadow-sm " data-aos="flip-up"
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-newBlue rounded shadow-sm "
+                     data-aos="flip-up"
                      data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
-                        <h1 class="h6 mb-0 text-white lh-1 animate__backInLeft">介護福祉士（暫定介護福祉士）、正看護師、准看護師等の有資格者</h1>
+                        <h1 class="h3 mb-0 text-white lh-1 animate__backInLeft">介護福祉士（暫定介護福祉士）、正看護師、准看護師等の有資格者</h1>
 
                     </div>
                 </div>
-                <div class="d-flex align-items-center p-3  my-1 text-white bg-newBlue rounded shadow-sm" data-aos="flip-up"
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-newBlue rounded shadow-sm"
+                     data-aos="flip-up"
                      data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
-                        <h1 class="h6 mb-0 text-white lh-1">特定技能介護合格者</h1>
+                        <h1 class="h3 mb-0 text-white lh-1">特定技能介護合格者</h1>
 
                     </div>
                 </div>
-                <div class="d-flex align-items-center p-3 my-1 text-white bg-newBlue rounded shadow-sm" data-aos="flip-up"
+                <div class="d-flex align-items-center p-3 my-1 text-white bg-newBlue rounded shadow-sm"
+                     data-aos="flip-up"
                      data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
-                        <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
+                        <h1 class="h3 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
 
                     </div>
                 </div>
-                <div class="d-flex align-items-center p-3  my-1 text-white bg-newBlue rounded shadow-sm" data-aos="flip-up"
+                <div class="d-flex align-items-center p-3  my-1 text-white bg-newBlue rounded shadow-sm"
+                     data-aos="flip-up"
                      data-aos-duration="2000">
                     <img class="me-3" src="img/icons8-bookmark-24.png">
                     <div class="lh-1">
-                        <h1 class="h6 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
+                        <h1 class="h3 mb-0 text-white lh-1">留学生（暫定）介護福祉士 ※ 詳細はお問い合わせください</h1>
 
                     </div>
                 </div>
@@ -652,13 +661,15 @@
                                 NTTインターネット株式会社<br>
                                 日本国内　大学、専門学校、日本語学校　多数<br>
                                 海外　日本語学校、留学会社　送り出し機関<br>
-                                他多数（順不同）</td>
+                                他多数（順不同）
+                            </td>
 
                         </tr>
                         <tr>
                             <th scope="row">東京本社</th>
                             <td>〒110-0005　東京都台東区上野1-11-9　イマスサニービル８階<br>
-                                TEL：03-5812-8321　FAX：03-5812-8366</td>
+                                TEL：03-5812-8321　FAX：03-5812-8366
+                            </td>
 
                         </tr>
                         </tbody>
@@ -668,25 +679,28 @@
                      data-aos-anchor="#example-anchor"
                      data-aos-offset="2000"
                      data-aos-duration="2000">
-                    <table class="table text-light" >
+                    <table class="table text-light">
                         <tbody>
                         <tr>
                             <th scope="row">大阪支社</th>
                             <td>〒531-0072 　大阪市北区豊崎3丁目20-9　三栄ビル9F<br>
-                                TEL：06-6371-6851　FAX：06-6371-6852</td>
+                                TEL：06-6371-6851　FAX：06-6371-6852
+                            </td>
 
                         </tr>
                         <tr>
                             <th scope="row">福岡支社</th>
                             <td>〒812-0013 　福岡県福岡市博多区博多駅東2-6-28<br>
                                 ユナイト博多ビル5階<br>
-                                TEL：092-477-2846　FAX：092-477-2848</td>
+                                TEL：092-477-2846　FAX：092-477-2848
+                            </td>
 
                         </tr>
                         <tr>
                             <th scope="row">名古屋支社</th>
                             <td>〒460-0003 　愛知県名古屋市中区錦2-9-6<br>
-                                名和丸の内ビル7階A号室</td>
+                                名和丸の内ビル7階A号室
+                            </td>
 
                         </tr>
                         <tr>
@@ -694,7 +708,8 @@
                             <td>中国（大連）<br>
                                 フィリピン（ダバオ）<br>
                                 ネパール（カトマンズ）<br>
-                                インドネシア（スラゲン）</td>
+                                インドネシア（スラゲン）
+                            </td>
 
                         </tr>
                         <tr>
@@ -704,7 +719,8 @@
                                 　特定技能サーチの運営　https://tokuteiginou-search.com<br>
                                 ・携帯電話の販売代理業務<br>
 
-                                介護職に特化した外国人材紹介事業を行っております</td>
+                                介護職に特化した外国人材紹介事業を行っております
+                            </td>
 
                         </tr>
                         <tr>
@@ -714,7 +730,8 @@
                                 ・准看護師等の有資格者<br>
                                 ・特定技能介護合格者<br>
                                 ・留学生（暫定）介護福祉士<br>
-                                ・就労制限のない人材</td>
+                                ・就労制限のない人材
+                            </td>
 
                         </tr>
                         <tr>
@@ -725,7 +742,8 @@
                                 ・ミャンマー<br>
                                 ・中国<br>
                                 ・モンゴル<br>
-                                ・ベトナム</td>
+                                ・ベトナム
+                            </td>
 
                         </tr>
 
@@ -752,9 +770,11 @@
                             企業様が人材採用時、応募者の前勤務先での勤務態度などを、弊社が代行してヒアリングさせていただき、スムーズな採用活動をサポートいたします。
                             弊社は社員の80%が外国籍で、中国、フィリピン、インドネシア、ネパールなどにも支社を設けています。
                             そのため、特定技能などの入国予定の就業者採用にも最適です。</p>
-                        <h2 class="pb-2">お気軽にお問い合わせください</h2>
+                        <h1 class="pb-2"><strong>お気軽にお問い合わせください</strong></h1>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
                             <button type="button" class="btn bg-newBlue btn-lg px-4 gap-3 customBtn text-light">
+                                <i class="bi bi-telephone-fill text-light"></i>
                                 03-5812-8321
                             </button>
                             <button type="button" class="btn btn-outline-secondary btn-lg px-4">お問い合わせ</button>

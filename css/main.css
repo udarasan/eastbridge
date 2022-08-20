@@ -55,3 +55,30 @@
 .carousel-item {
     min-height: calc(100vh - 64px);
 }
+#feature{
+    color: #1a2ea7;
+}
+#staff{
+    color: #1a2ea7;
+}
+#feature-sub{
+    color: #a2afff;
+}
+
+#staff-sub{
+    color: #a2afff;
+}
+header{
+
+}
+
+main{
+
+}
+.title-name{
+    font-size: 50px;
+}
+.bg{
+    background-color: #1a2ea7;
+    color: white;
+}
