@@ -25,6 +25,7 @@
 
 .bg-newBlue {
     background-color: #1a2ea7;
+    border-radius: 10px;
 }
 
 .customBtn:hover {
